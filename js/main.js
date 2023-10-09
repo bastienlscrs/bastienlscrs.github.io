@@ -5,7 +5,10 @@ JSON.stringify(url)
 localStorage.setItem('links', JSON.stringify(url));
 
 const stockedURL = JSON.parse(localStorage.getItem('links'));
- 
+
+/**
+ * Fonction qui stocke la list des pays dans le localStorage et Affiche
+ */
 async function AllCountry(){
     let data = await fetch(stockedURL);
     let country = await data.json();
