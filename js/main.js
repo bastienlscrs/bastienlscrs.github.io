@@ -12,8 +12,6 @@ async function AllCountry(){
     localStorage.setItem('pays', JSON.stringify(country));
     const stockedCountry = JSON.parse(localStorage.getItem('pays'));
 
-
-
     for (const c of stockedCountry) {
 
         main.innerHTML += `<p> ${c.name.common}</p> <img src="${c.flags.svg}" style="width: 200px;">`;
